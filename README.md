@@ -43,6 +43,6 @@ I love chilling places as much a good PHONK music onto my ears while I do GYM. :
 <a href="https://www.linkedin.com/in/huggsfmelo/">![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)</a> 
 
 
-## Github Stats :zap:
+## Github Stats 
 ![Huggsf's Stats](https://github-readme-stats.vercel.app/api?username=Huggsf&theme=tokyonight&show_icons=true&hide_border=false&count_private=true)
 ![Huggsf's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Huggsf&theme=tokyonight&show_icons=true&hide_border=false&layout=compact)
