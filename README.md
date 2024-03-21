@@ -8,9 +8,7 @@ I am a Web Developer from 🇧🇷 Recife-PE and currently here.
 
 ## A little about me
 
-I'm a student of **Analysis and Systems Development** at <a href="https://www.celsolisboa.edu.br">_Centro Universitário Celso Lisboa_</a> and also pursuing **Full-Stack Developer** at <a href="https://web.dio.me">_Digital Innovation One_</a>.
-
-Previously, I spent many years working as a video and image editor. However, my passion for technology led me to transition into web development. Additionally, I'm currently exploring the exciting field of Game Development.
+I'm graduated in **Game Development** at Estácio
 
 I love chilling places as much a good PHONK music onto my ears while I do GYM. :fire:
 
