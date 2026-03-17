@@ -89,4 +89,3 @@ I believe the future of software engineering is **human-AI collaboration at the 
 ### Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/huggsfmelo/)
-[![Website](https://img.shields.io/badge/huggs.tech-000000?style=for-the-badge&logo=safari&logoColor=white)](https://huggs.tech)
