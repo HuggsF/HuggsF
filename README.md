@@ -1,16 +1,35 @@
-<a href="https://huggs.tech">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=800&height=100&lines=AI+Context+Architect;Agent+Orchestration+%7C+RAG+Systems+%7C+MLOps;Building+systems+where+AI+and+humans+collaborate" alt="Typing SVG" />
-</a>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212748830-4c709398-a386-4761-84d7-9e10b98fbe6e.gif" width="500" />
+</p>
 
-## About
-
-I design and build **AI-first systems** — from multi-agent orchestration to RAG pipelines and cost-optimized LLM architectures. Founder of **OmegaHuggsTeam**, where we ship AI-powered products that solve real business problems.
-
-I believe the future of software engineering is **human-AI collaboration at the architecture level** — not just code completion, but systems that think, decide, and act alongside engineers.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=800&height=100&lines=%3E_+AI+Context+Architect;%3E_+Agent+Orchestration+%7C+RAG+Systems+%7C+MLOps;%3E_+Building+systems+where+AI+%26+humans+collaborate" alt="Typing SVG" />
+</p>
 
 ---
 
-### Tech Stack
+<img align="right" src="https://user-images.githubusercontent.com/74038190/212747903-e9bdf048-2dc8-41f9-b973-0e72ff07bfba.gif" width="240" />
+
+## `> whoami`
+
+I design and build **AI-first systems** — from multi-agent orchestration to RAG pipelines and cost-optimized LLM architectures.
+
+I believe the future of software engineering is **human-AI collaboration at the architecture level** — not just code completion, but systems that think, decide, and act alongside engineers.
+
+```python
+class HugoFernandes:
+    role = "AI Context Architect"
+    location = "Recife, Brazil"
+    focus = ["Agent Orchestration", "RAG Pipelines", "MLOps"]
+    languages = ["Python", "TypeScript", "Go", "Rust"]
+    motto = "Design the context. Let AI do the rest."
+```
+
+<br clear="right"/>
+
+---
+
+### `> cat tech_stack.yaml`
 
 **AI / ML**
 
@@ -61,15 +80,22 @@ I believe the future of software engineering is **human-AI collaboration at the 
 
 ---
 
-### Current Focus
+### `> systemctl status focus`
 
-- **Agent Orchestration** — Multi-agent systems with intelligent routing, cost optimization, and observability
-- **RAG Pipelines** — End-to-end retrieval: embeddings, graph traversal, reranking, and evaluation
-- **AI-First Architecture** — Designing products where AI is a core system component, not a bolt-on
+```
+● agent-orchestration.service - ACTIVE (running)
+    Multi-agent systems with intelligent routing, cost optimization, and observability
+
+● rag-pipeline.service - ACTIVE (running)
+    End-to-end retrieval: embeddings, graph traversal, reranking, and evaluation
+
+● ai-architecture.service - ACTIVE (running)
+    Designing products where AI is a core system component, not a bolt-on
+```
 
 ---
 
-### GitHub Stats
+### `> neofetch --stats`
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=HuggsF&theme=tokyonight&show_icons=true&hide_border=true&count_private=true&rank_icon=github" height="165" />
@@ -86,6 +112,16 @@ I believe the future of software engineering is **human-AI collaboration at the 
 
 ---
 
-### Connect
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/213910842-5a320d6b-e48f-4d41-a901-0e6a357e8dae.gif" width="500" />
+</p>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/huggsfmelo/)
+<p align="center">
+  <a href="https://www.linkedin.com/in/huggsfmelo/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=HuggsF&style=flat-square&color=00FF41" />
+</p>
