@@ -7,7 +7,7 @@
 Building production **microservices** and **REST APIs** in Python —
 and the AI systems that run on top of them.
 
-📍 Recife, Brazil · [LinkedIn](https://www.linkedin.com/in/<SEU-SLUG>) · 📫 <SEU-EMAIL>
+📍 Recife, Brazil · [LinkedIn](https://www.linkedin.com/in/huggsfmelo) · 📫 <fernandes.omegatech@gmail.com>
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
