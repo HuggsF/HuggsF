@@ -2,7 +2,7 @@
 
 # Hugo Fernandes
 
-**Senior Software Engineer — Backend & AI-First Platforms**
+**Mid Software Engineer — Backend & AI-First Platforms**
 
 Building production **microservices** and **REST APIs** in Python —
 and the AI systems that run on top of them.
