@@ -1,43 +1,53 @@
-<div align="center">
-
 # Hugo Fernandes
 
-**Mid Software Engineer — Backend & AI-First Platforms**
+**Engenheiro de software back-end** em Recife, com foco em sistemas distribuídos, mensageria e plataformas com IA.
+Trabalho com TypeScript, Node.js e Java, e já construí serviços orientados a eventos em produção.
 
-Building production **microservices** and **REST APIs** in Python —
-and the AI systems that run on top of them.
+Estou aberto a vagas de **Backend, Platform e AI Engineering** (presencial, híbrido ou remoto).
 
-📍 Recife, Brazil · [LinkedIn](https://www.linkedin.com/in/huggsfmelo) · 📫 <hugofmelodev@gmail.com>
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
-![Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=flat&logo=apachekafka&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
-
-</div>
+[LinkedIn](https://www.linkedin.com/in/huggsfmelo) · [hugofmelodev@gmail.com](mailto:hugofmelodev@gmail.com)
 
 ---
 
-### 🛠️ What I build
+## Trabalhos selecionados
 
-- **Microservices & REST APIs** — FastAPI, async Python, layered architecture (router → service → repository → model)
-- **Event-driven systems** — Kafka with idempotent consumers, DLQs, backpressure; Redis for caching & config
-- **Data & persistence** — PostgreSQL, MongoDB, SQLAlchemy; explicit schemas and migrations
-- **Ship & operate** — multi-stage Docker, GitHub Actions CI, Prometheus/Grafana, structured JSON logging, `/health` + `/metrics`
-- **AI-first platforms** *(my edge)* — multi-agent orchestration, RAG pipelines, Claude API — layered on solid backend, not instead of it
+Cinco projetos, cada um criado para resolver um gargalo clássico de back-end e **medido com carga real**
+(Docker Compose em cada um). Os números abaixo vêm das medições que publiquei no LinkedIn.
 
-### 📌 Selected work
-<!-- Pin 2–4 repos. One line each: what it does + stack. -->
-- **[<repo>](<url>)** — <one-line impact> · `FastAPI` `PostgreSQL` `Docker`
+| Projeto | Problema | Resultado medido |
+|---|---|---|
+| [csv-stream-importer](https://github.com/HuggsF/csv-stream-importer) | Importar 500 mil linhas de CSV no MySQL sem estourar a memória (Node.js Streams, backpressure, inserts em lote) | Pico de 79 MB de RAM. A abordagem ingênua passa de 590 MB só para ler o arquivo |
+| [resilient-pdf-worker](https://github.com/HuggsF/resilient-pdf-worker) | Worker RabbitMQ que gera PDFs com API externa instável (retries, circuit breaker, Dead Letter Queue) | 702 mensagens em 4 cenários de falha, nenhuma perdida. Com a API fora do ar, o circuit breaker deixou passar 46 chamadas em vez de 400 |
+| [leaderboard-cache-shield](https://github.com/HuggsF/leaderboard-cache-shield) | Cache stampede em um ranking com 10 mil requisições simultâneas (TTL, Redlock, stale-while-revalidate) | 10.000 queries no MySQL com cache ingênuo contra 1 com stale-while-revalidate. Pior resposta: 13,2 s contra 65 ms |
+| [dashboard-bff-graphql](https://github.com/HuggsF/dashboard-bff-graphql) | Over-fetching em um dashboard (BFF com Express, Apollo GraphQL e DataLoader, Clean Architecture e DDD) | Resposta de 9 MB reduzida para 2,6 KB |
+| [edtech-cloud-deploy](https://github.com/HuggsF/edtech-cloud-deploy) | Workers Node.js no AWS ECS/Fargate com autoscaling pelo tamanho da fila (Terraform, CI/CD, Prometheus e Grafana) | Medido localmente: 2 workers entregam 1,94× a vazão e 4 entregam 3,22×. Desligamento no meio da carga sem perder tarefas |
 
-### 🔭 Currently
-Open to **Backend / Platform / AI-Engineering** roles. Designing systems where humans and agents build together.
+Como uso IA nesses projetos: eu defino a especificação, as regras (Clean Architecture, DDD, TypeScript estrito,
+testes) e os critérios de aceite. A IA acelera código e testes. Eu cuido dos contratos, dos limites entre camadas e
+do comportamento sob falha.
 
-<div align="center">
+---
 
-![Hugo's GitHub stats](https://github-readme-stats.vercel.app/api?username=HuggsF&show_icons=true&hide_border=true)
+## Stack
 
-</div>
+**Nos repositórios acima:** TypeScript, Node.js, RabbitMQ, Redis, MySQL, GraphQL (Apollo), Docker, Terraform, AWS (ECS/Fargate), Prometheus, Grafana.
+
+**Em produção, em trabalhos anteriores (código privado):** Java, C#/.NET, Kafka, MongoDB, PostgreSQL, Pinecone, Python/FastAPI, Angular.
+
+**Práticas:** TDD, Clean Architecture, DDD, mensageria idempotente, observabilidade, CI/CD.
+
+---
+
+## Experiência
+
+- **UserIn** (2025 até agora): arquitetura e desenvolvimento de uma plataforma de inteligência de conversão com IA. Microsserviços em TypeScript, eventos com Kafka, MongoDB e busca vetorial.
+- **SendSpeed** (2024 a 2025): migração de serviços legados para microsserviços na nuvem, APIs REST e mensageria com RabbitMQ.
+- **Mobs2** (2022 a 2024) e **Dois S Operation** (2020 a 2022): APIs e microsserviços em C#, Java e PHP, e front-end em Angular.
+
+<!--
+Seção para ativar quando o repositório estiver público:
+
+## Second Brain (versão aberta)
+Motor local de conhecimento e orquestração de agentes: orquestrador em grafo com 7 nós, circuit breakers,
+aprovação humana, quality gates e servidor MCP. [Repositório](https://github.com/HuggsF/<nome-do-repositorio>)
+-->
