@@ -163,6 +163,83 @@ def activity(cal):
     return card(860, 204, "".join(b), "Contribution activity")
 
 
+RESULTS = [  # figures reported by the author (LinkedIn post); measured locally with Docker Compose
+    ("csv-stream-importer", "500k CSV rows", "79 MB peak RAM", "naive approach: 590 MB+"),
+    ("resilient-pdf-worker", "702 messages, 4 failure scenarios", "0 lost", "circuit breaker: 46 calls instead of 400"),
+    ("leaderboard-cache-shield", "10,000 concurrent requests", "10,000 queries → 1", "worst response 13.2 s → 65 ms"),
+    ("dashboard-bff-graphql", "over-fetching in a dashboard", "9 MB → 2.6 KB", "BFF + GraphQL + DataLoader"),
+    ("edtech-cloud-deploy", "queue-depth autoscaling (local)", "1.94× · 3.22×", "2 and 4 workers, no task lost"),
+    ("rag-dojo", "RAG in 6 spirals (team project)", "no benchmark yet", "stated openly"),
+]
+EXPERIENCE = [
+    ("2025 – now", "UserIn", "Full-Stack Engineer · Product Architecture & AI-First Platforms",
+     "TypeScript microservices, Kafka events, MongoDB, vector search"),
+    ("2024 – 2025", "SendSpeed", "Back-end Developer",
+     "Legacy to cloud microservices, REST APIs, RabbitMQ"),
+    ("2022 – 2024", "Mobs2", "Full Stack Engineer",
+     "C#, Java and PHP APIs, Angular, Kafka and RabbitMQ on AWS"),
+    ("2020 – 2022", "Dois S Operation", "Full-stack Developer .NET",
+     "C# microservices and Angular for fuel-logistics operations"),
+]
+AI_RULES = [
+    ("I own", "the specification, the contracts between layers and the behavior under failure"),
+    ("AI speeds up", "code, tests and refactors"),
+    ("Non-negotiable", "Clean Architecture, DDD, strict TypeScript, tests, Docker Compose in every project"),
+    ("Validation", "run it, load it, review the infrastructure; tests alone missed real bugs"),
+]
+
+
+def results():
+    b = [dots(), text(88, 22, "cat results.log", 12, MUTED, 400, MONO), text(30, 62, "Measured Results", 16, TEXT, 700),
+         text(830, 62, "measured locally · figures reported by the author", 12, MUTED, 400, SANS, "end")]
+    y = 94
+    for name, ctx, big, note in RESULTS:
+        b.append(f'<rect x="30" y="{y-16}" width="800" height="48" rx="8" fill="{ACC}" fill-opacity="0.05" stroke="{BORDER}"/>')
+        b.append(text(44, y + 2, name, 13, TEXT, 600, MONO))
+        b.append(text(44, y + 21, ctx, 12, MUTED))
+        b.append(text(816, y + 2, big, 16, ACC, 700, MONO, "end"))
+        b.append(text(816, y + 21, note, 12, MUTED, 400, SANS, "end"))
+        y += 58
+    return card(860, y + 6, "".join(b), "Measured results")
+
+
+def experience():
+    b = [dots(), text(88, 22, "git log --author=me", 12, MUTED, 400, MONO), text(30, 62, "Experience", 16, TEXT, 700)]
+    y = 98
+    b.append(f'<line x1="112" y1="{y-10}" x2="112" y2="{y+4*62-34}" stroke="{BORDER}" stroke-width="2"/>')
+    for when, org, role, what in EXPERIENCE:
+        b.append(text(30, y + 4, when, 12, MUTED, 400, MONO))
+        b.append(f'<circle cx="112" cy="{y}" r="6" fill="{BG}" stroke="{ACC}" stroke-width="2"/>')
+        b.append(text(132, y + 1, f"{org}", 14, TEXT, 700))
+        b.append(text(132 + 16 + int(len(org) * 8.4), y + 1, role, 12, ACC, 500, MONO))
+        b.append(text(132, y + 20, what, 12, MUTED))
+        y += 62
+    return card(860, y - 14, "".join(b), "Experience")
+
+
+def how_i_work():
+    b = [dots(), text(88, 22, "cat how-i-use-ai.md", 12, MUTED, 400, MONO), text(30, 62, "How I Use AI", 16, TEXT, 700)]
+    y = 94
+    for k, v in AI_RULES:
+        b.append(text(30, y, k, 13, ACC, 700, MONO))
+        b.append(text(170, y, v, 13, TEXT))
+        y += 30
+    return card(860, y + 4, "".join(b), "How I use AI")
+
+
+def connect():
+    b = [dots(), text(88, 22, "./connect.sh", 12, MUTED, 400, MONO), text(30, 62, "Open to work", 16, TEXT, 700)]
+    x = 30
+    for lab in ["Backend", "Platform", "AI Engineering"]:
+        c, w = chip(x, 76, lab)
+        b.append(c)
+        x += w + 8
+    b.append(text(30, 128, "On-site, hybrid or remote · Recife, Brazil", 13, MUTED))
+    b.append(text(30, 156, "linkedin.com/in/huggsfmelo", 13, ACC, 600, MONO))
+    b.append(text(300, 156, "github.com/HuggsF", 13, ACC, 600, MONO))
+    return card(860, 176, "".join(b), "Open to work and contact")
+
+
 def main():
     u = api(f"users/{USER}")
     repos = [r for r in api(f"users/{USER}/repos?per_page=100&type=owner") if not r["fork"]]
@@ -178,7 +255,8 @@ def main():
     OUT.mkdir(exist_ok=True)
     stack_svg, _ = stack(langs)
     for name, svg in [("header", header(u, len(repos), stars, cal["totalContributions"])), ("stack", stack_svg),
-                      ("projects", projects(featured)), ("activity", activity(cal))]:
+                      ("projects", projects(featured)), ("results", results()), ("experience", experience()),
+                      ("ai", how_i_work()), ("activity", activity(cal)), ("connect", connect())]:
         (OUT / f"{name}.svg").write_text(svg, encoding="utf-8")
         print("wrote", OUT / f"{name}.svg", len(svg), "bytes")
 
