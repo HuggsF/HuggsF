@@ -21,7 +21,9 @@ jobs:
       - name: Generate SVG cards
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/gen_assets.py "${{ github.repository_owner }}"
+        run: |
+          python scripts/gen_assets.py "${{ github.repository_owner }}"
+          python scripts/gen_animated.py "${{ github.repository_owner }}"
 
       - name: Commit changes
         run: |

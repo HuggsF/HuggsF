@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="176" viewBox="0 0 860 176" role="img" aria-label="Open to work and contact"><style>
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+@keyframes fade { from { opacity: 0; transform: translateY(8px); } }
+@keyframes type { from { width: 0; } }
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes pulse { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(1.35); opacity: 0; } }
+@keyframes twinkle { 0%,100% { opacity: var(--o); } 50% { opacity: .08; } }
+@keyframes grow { from { transform: scaleX(0); } }
+@keyframes sweep { from { transform: translateX(0); } to { transform: translateX(1260px); } }
+@keyframes ticker { to { transform: translateX(var(--w)); } }
+@keyframes draw { from { transform: scaleY(0); } }
+@keyframes step { 0% { opacity: 0; } 2% { opacity: 1; } 96% { opacity: 1; } 98%,100% { opacity: 0; } }
+@keyframes show { from { opacity: 0; } }
+@keyframes role { 0% { opacity: 0; } 4%,30% { opacity: 1; } 34%,100% { opacity: 0; } }
+@keyframes cell { from { opacity: 0; transform: scale(.2); } }
+.fade { animation: fade .6s ease-out both; }
+.cur { animation: blink 1s step-end infinite; }
+.gr { transform-box: fill-box; transform-origin: 0 50%; animation: grow .9s cubic-bezier(.2,.7,.2,1) both; }
+.dr { transform-box: fill-box; transform-origin: 50% 0; animation: draw 1.2s ease-out both; }
+.cl { transform-box: fill-box; transform-origin: 50% 50%; animation: cell .45s ease-out both; }
+</style><defs></defs><rect x="0.5" y="0.5" width="859" height="175" rx="12" fill="#0b0f14" stroke="#1f2a33"/><circle cx="22" cy="18" r="4.5" fill="#ff5f57"/><circle cx="38" cy="18" r="4.5" fill="#febc2e"/><circle cx="54" cy="18" r="4.5" fill="#28c840"/><text x="88" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#8b98a5" font-weight="400" text-anchor="start" >./connect.sh</text><text x="30" y="62" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="16" fill="#e6edf3" font-weight="700" text-anchor="start" >Open to work</text><circle cx="212" cy="57" r="5" fill="#34d399"/><circle cx="212" cy="57" r="5" fill="none" stroke="#34d399" style="transform-box:fill-box;transform-origin:center;animation: pulse 1.8s ease-out infinite"/><g class="fade" style="animation-delay:0.20s"><rect x="30" y="76" width="64" height="24" rx="12" fill="#34d399" fill-opacity="0.12" stroke="#34d399" stroke-opacity="0.5"/><text x="62.0" y="92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#e6edf3" font-weight="500" text-anchor="middle" >Backend</text></g><g class="fade" style="animation-delay:0.35s"><rect x="102" y="76" width="71" height="24" rx="12" fill="#34d399" fill-opacity="0.12" stroke="#34d399" stroke-opacity="0.5"/><text x="137.5" y="92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#e6edf3" font-weight="500" text-anchor="middle" >Platform</text></g><g class="fade" style="animation-delay:0.50s"><rect x="181" y="76" width="114" height="24" rx="12" fill="#34d399" fill-opacity="0.12" stroke="#34d399" stroke-opacity="0.5"/><text x="238.0" y="92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#e6edf3" font-weight="500" text-anchor="middle" >AI Engineering</text></g><text x="30" y="128" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="13" fill="#8b98a5" font-weight="400" text-anchor="start" class="fade" style="animation-delay:0.70s">On-site, hybrid or remote · Recife, Brazil</text><clipPath id="l1"><rect x="30" y="141" width="206.8" height="23" style="animation: type 1.17s steps(26) 1.00s both"/></clipPath><text x="30" y="156" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#34d399" font-weight="700" clip-path="url(#l1)" xml:space="preserve">linkedin.com/in/huggsfmelo</text><clipPath id="l2"><rect x="300" y="141" width="136.6" height="23" style="animation: type 0.77s steps(17) 2.27s both"/></clipPath><text x="300" y="156" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#34d399" font-weight="700" clip-path="url(#l2)" xml:space="preserve">github.com/HuggsF</text></svg>
