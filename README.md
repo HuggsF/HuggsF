@@ -11,8 +11,8 @@ Estou aberto a vagas de **Backend, Platform e AI Engineering** (presencial, híb
 
 ## Trabalhos selecionados
 
-Cinco projetos, cada um criado para resolver um gargalo clássico de back-end e **medido com carga real**
-(Docker Compose em cada um). Os números abaixo vêm das medições que publiquei no LinkedIn.
+Cinco projetos criados para resolver gargalos clássicos de back-end e **medidos com carga real**
+(Docker Compose em cada um), mais um estudo de RAG. Os números vêm das medições que publiquei no LinkedIn.
 
 | Projeto | Problema | Resultado medido |
 |---|---|---|
@@ -21,8 +21,9 @@ Cinco projetos, cada um criado para resolver um gargalo clássico de back-end e 
 | [leaderboard-cache-shield](https://github.com/HuggsF/leaderboard-cache-shield) | Cache stampede em um ranking com 10 mil requisições simultâneas (TTL, Redlock, stale-while-revalidate) | 10.000 queries no MySQL com cache ingênuo contra 1 com stale-while-revalidate. Pior resposta: 13,2 s contra 65 ms |
 | [dashboard-bff-graphql](https://github.com/HuggsF/dashboard-bff-graphql) | Over-fetching em um dashboard (BFF com Express, Apollo GraphQL e DataLoader, Clean Architecture e DDD) | Resposta de 9 MB reduzida para 2,6 KB |
 | [edtech-cloud-deploy](https://github.com/HuggsF/edtech-cloud-deploy) | Workers Node.js no AWS ECS/Fargate com autoscaling pelo tamanho da fila (Terraform, CI/CD, Prometheus e Grafana) | Medido localmente: 2 workers entregam 1,94× a vazão e 4 entregam 3,22×. Desligamento no meio da carga sem perder tarefas |
+| [rag-dojo](https://github.com/HuggsF/rag-dojo) | Estudo de RAG em 6 espirais, em Python: chunking e recuperação, Graph RAG (ChromaDB + Neo4j), orquestração por confiança, controle de custo e laço de auto-melhoria. Projeto em equipe, com ADRs | Sem benchmark publicado. Cerca de 900 funções de teste e meta de 90% de cobertura por arquivo na CI (testes ainda não rodados por mim) |
 
-Como uso IA nesses projetos: eu defino a especificação, as regras (Clean Architecture, DDD, TypeScript estrito,
+Como uso IA nos cinco primeiros projetos: eu defino a especificação, as regras (Clean Architecture, DDD, TypeScript estrito,
 testes) e os critérios de aceite. A IA acelera código e testes. Eu cuido dos contratos, dos limites entre camadas e
 do comportamento sob falha.
 
@@ -30,7 +31,7 @@ do comportamento sob falha.
 
 ## Stack
 
-**Nos repositórios acima:** TypeScript, Node.js, RabbitMQ, Redis, MySQL, GraphQL (Apollo), Docker, Terraform, AWS (ECS/Fargate), Prometheus, Grafana.
+**Nos repositórios acima:** TypeScript, Node.js, Python, RabbitMQ, Redis, MySQL, ChromaDB, Neo4j, GraphQL (Apollo), Docker, Terraform, AWS (ECS/Fargate), Prometheus, Grafana.
 
 **Em produção, em trabalhos anteriores (código privado):** Java, C#/.NET, Kafka, MongoDB, PostgreSQL, Pinecone, Python/FastAPI, Angular.
 
