@@ -44,10 +44,11 @@ do comportamento sob falha.
 - **SendSpeed** (2024 a 2025): migração de serviços legados para microsserviços na nuvem, APIs REST e mensageria com RabbitMQ.
 - **Mobs2** (2022 a 2024) e **Dois S Operation** (2020 a 2022): APIs e microsserviços em C#, Java e PHP, e front-end em Angular.
 
-<!--
-Seção para ativar quando o repositório estiver público:
+---
 
 ## Second Brain (versão aberta)
+
 Motor local de conhecimento e orquestração de agentes: orquestrador em grafo com 7 nós, circuit breakers,
-aprovação humana, quality gates e servidor MCP. [Repositório](https://github.com/HuggsF/<nome-do-repositorio>)
--->
+aprovação humana, quality gates, política de comandos e servidor MCP. Python, com interface em React.
+
+[HuggsF/second-brain-open](https://github.com/HuggsF/second-brain-open)
