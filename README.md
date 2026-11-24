@@ -31,7 +31,7 @@ Aberto a vagas de **Backend, Platform e AI Engineering** (presencial, híbrido o
 
 <img src="assets/a-activity.svg" width="860" alt="Atividade de contribuição no último ano" />
 
-<img src="assets/a-experience.svg" width="860" alt="Experiência: UserIn (2025 até agora), arquitetura de plataforma com IA, microsserviços em TypeScript, eventos com Kafka, MongoDB e busca vetorial; SendSpeed (2024 a 2025), migração de legado para microsserviços na nuvem, APIs REST e RabbitMQ; Mobs2 (2022 a 2024), APIs em C#, Java e PHP, Angular, Kafka e RabbitMQ na AWS; Dois S Operation (2020 a 2022), microsserviços em C# e Angular" />
+<img src="assets/a-experience.svg" width="860" alt="Experiência: UserIn (2025 a 2026), arquitetura de plataforma com IA, microsserviços em TypeScript, eventos com Kafka, MongoDB e busca vetorial; SendSpeed (2024 a 2025), migração de legado para microsserviços na nuvem, APIs REST e RabbitMQ; Mobs2 (2022 a 2024), APIs em C#, Java e PHP, Angular, Kafka e RabbitMQ na AWS; Dois S Operation (2020 a 2022), microsserviços em C# e Angular" />
 
 <img src="assets/a-connect.svg" width="860" alt="Aberto a vagas de Backend, Platform e AI Engineering, em Recife" />
 

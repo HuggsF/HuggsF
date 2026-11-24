@@ -19,7 +19,7 @@ DISPLAY_NAME = "Hugo Melo"  # public name; the GitHub profile name may differ
 OUT = Path(__file__).resolve().parent.parent / "assets"
 FEATURED = ["rag-dojo", "second-brain-open", "edtech-cloud-deploy",
             "leaderboard-cache-shield", "resilient-pdf-worker"]
-STACK = ["TypeScript", "Node.js", "Python", "Java", "RabbitMQ", "Redis", "MySQL", "GraphQL",
+STACK = ["TypeScript", "Node.js", "Python", "PHP", "Java", "RabbitMQ", "Redis", "MySQL", "GraphQL",
          "Neo4j", "ChromaDB", "Docker", "Terraform", "AWS ECS", "Prometheus"]
 
 BG, BORDER, TEXT, MUTED = "#0b0f14", "#1f2a33", "#e6edf3", "#8b98a5"
@@ -172,7 +172,7 @@ RESULTS = [  # figures reported by the author (LinkedIn post); measured locally 
     ("rag-dojo", "RAG in 6 spirals (team project)", "no benchmark yet", "stated openly"),
 ]
 EXPERIENCE = [
-    ("2025 – now", "UserIn", "Full-Stack Engineer · Product Architecture & AI-First Platforms",
+    ("2025 – 2026", "UserIn", "Full-Stack Engineer · Product Architecture & AI-First Platforms",
      "TypeScript microservices, Kafka events, MongoDB, vector search"),
     ("2024 – 2025", "SendSpeed", "Back-end Developer",
      "Legacy to cloud microservices, REST APIs, RabbitMQ"),
